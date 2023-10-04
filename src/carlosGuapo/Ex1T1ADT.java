@@ -1,10 +1,18 @@
 package carlosGuapo;
 
+import java.io.File;
+import java.util.Arrays;
+
 public class Ex1T1ADT {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
+		if(args[0].equals("")) {
+			System.err.println("Must provide a directory");
+		}else {
+			File f = new File(args[0]);
+			System.out.println(f.exists() ? Arrays.toString(f.listFiles()) : "El directorio no existe");
+		}
 	}
 
 }
