@@ -11,7 +11,10 @@ public class Ex2T1ADT {
 		f.mkdir();
 		try {
 			new File(f, "file1").createNewFile();
-			new File(f, "file2").createNewFile();
+			File re = new File(f, "file2");
+			File rename = new File("renamedFile");
+			re.createNewFile();
+			re.renameTo(rename);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
