@@ -23,7 +23,7 @@ public class ErroresXml {
 		try {
 			SAXParserFactory sFactory = SAXParserFactory.newInstance(); //instancia del analizador
 			SAXParser parse = sFactory.newSAXParser(); //analiza el documento
-			
+		
 			XMLReader xmlparser = parse.getXMLReader();
 			xmlparser.parse(new InputSource(fichero));
 			System.out.println("fin del analisis");
