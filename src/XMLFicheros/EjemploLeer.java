@@ -18,7 +18,7 @@ public class EjemploLeer {
 		DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 		try {
 			DocumentBuilder buldier = factory.newDocumentBuilder();
-			Document document = (Document) buldier.parse(new File(".\\xmlFichreos\\Empleados.xml"));
+			Document document = (Document) buldier.parse(new File("xmlFichreos\\Empleados.xml"));
 			document.getDocumentElement().normalize();
 			System.out.printf("elemento raiz: %s %n", document.getDocumentElement().getNodeName());
 			  NodeList empleados = document.getElementsByTagName("empleado");
