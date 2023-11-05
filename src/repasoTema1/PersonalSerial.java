@@ -15,5 +15,11 @@ public class PersonalSerial implements Serializable{
 	public String toString() {
 		return "PersonalSerial [nombre=" + nombre + ", edad=" + edad + "]";
 	}
+	public void setAge(int edad) throws ExceptionPersona{
+		if(edad<0) {
+			throw new ExceptionPersona("no se pueden tener -0 años");
+		}
+		this.edad = edad;
+	}
 	
 }

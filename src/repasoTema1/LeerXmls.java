@@ -10,7 +10,7 @@ import org.w3c.dom.Element;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
-public class Xmls {
+public class LeerXmls {
 
 	public static void main(String[] args) {
 		//clase que nos proporciona herramientas para el xml
