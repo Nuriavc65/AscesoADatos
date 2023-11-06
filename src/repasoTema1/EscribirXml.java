@@ -21,10 +21,10 @@ public class EscribirXml {
 				}
 			} catch (Exception e) {}
 			input.close();
-			XStream xs = new XStream ();
-			xs.alias ("personas",personas);
-			xs.alias ("persona",PersonalSerial.class);
-			xs.toXML (personas , new FileOutputStream("Textos\\xmlPersona.xml"));
+			//XStream xs = new XStream ();
+			//xs.alias ("personas",personas);
+			//xs.alias ("persona",PersonalSerial.class);
+			//xs.toXML (personas , new FileOutputStream("Textos\\xmlPersona.xml"));
 		}catch(Exception e){}
 	}
 

@@ -13,7 +13,8 @@ import org.xml.sax.InputSource;
 public class EscribirBinarioSerial {
 
 	public static void main(String[] args) {
-		File fichero = new File("Textos\\binarioObjetos.txt");
+		String ruta = "";
+		File fichero = new File( ruta +"binarioObjetos.txt");
 		try {
 			fichero.createNewFile();
 			//herramientas para escribir el fichero
